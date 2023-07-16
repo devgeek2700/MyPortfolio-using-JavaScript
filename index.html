@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fb765b365e.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- /* ************************ NAVBAR SECTION ******************************** */ -->
+
+    <header class="head">
+        <h1 class="logo">Neha</h1>
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a class="link" href="#" target="_blank">Home</a></li>
+                <li><a class="link" href="#" target="_blank">About</a></li>
+                <li><a class="link" href="#" target="_blank">Skills</a></li>
+                <li><a class="link" href="#" target="_blank">Education</a></li>
+                <li><a class="link" href="#" target="_blank">Contact Me</a></li>
+                <li><a class="link" href="#" onclick="darkMode(this)"><i class="fa-solid fa-moon fa-beat" ></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="mob-menu-icons">
+            <ion-icon name="grid-outline" class="mob-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mob-icon"></ion-icon>
+        </div>
+    </header>
+
+    <!-- /* ************************ HOME PAGE SECTION ******************************** */ -->
+
+    <main>
+        <section class="section-hero">
+            <div class="hero">
+
+                <div class="pro_icons">
+                    <a href="https://www.linkedin.com/in/neha-singh-69a83726a/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/devgeek2700"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://dribbble.com"><i class="fa-brands fa-dribbble"></i></a>
+                    
+                </div>
+                <div class="pro_txt">
+                    <h2>Hi, I'am Neha Singh</h2>
+                    <p id="post">Full Stack Developer</p>
+                    <p>High level experience in web design and <br>
+                    Development knowledge, producing <br>
+                    quality work.</p>
+                    <button class="hire_btn" >Hire Me</button>
+                </div>
+
+                <div class="pro_img">
+                        <!-- Image -->
+                        <div class="img_box"></div>
+                        <img src="Images/pic1.png" class="bg_img">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- /* ************************ ABOUT PAGE SECTION ******************************** */ -->
+
+    <section class="abt_container">
+        <div class="up_head">
+            <h3>About Me</h3>
+            <p>My Introduction</p>
+        </div>
+
+        <div class="abt_box">
+            <div class="abt_row">
+                <div class="abt_img_box">
+                    <img src="Images/abt-img.jpg" class="abt_img">
+                </div>
+                <div class="abt_txt">
+                    <p>Web developer, with extensive knowledge <br>
+                    and years of experience, working in web <br>
+                    technologies and Ui / Ux design, delivering <br>
+                    quality work.</p>
+
+                    <div class="abt_nums">
+                        <div class="abt_count">
+                            <h3>08+</h3>
+                            <p id="mob_para">Years <br> experience</p>
+                        </div>
+                        <div class="abt_count">
+                            <h3>20+</h3>
+                            <p id="mob_para">Completed <br> Projects</p>
+                        </div>
+                        <div class="abt_count">
+                            <h3>01+</h3>
+                            <p id="mob_para">Companies <br> Worked</p>
+                        </div>
+                    </div>
+                    <a href="Images/demoPDF.pdf" download="NehaCV">
+                       <button class="dwnld_btn" >Download CV <i class="fa-solid fa-download fa-beat"></i></button>
+                     </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- /* ************************ BAR PAGE SECTION ******************************** */  -->
+
+    <section class="bar_conatiner">
+        <div class="up_head">
+            <h3>My Skills</h3>
+            <p>My techincal skills</p>
+        </div>
+
+        <div class="bar_row">
+            <div class="bar_col1">
+                <div class="upper_block" onclick="ShowMySkills1()">
+                    <div class="up_row">
+                        <i class="fa-brands fa-free-code-camp" id="frnt-icons"></i>
+                        <h3 id="bar_up_txt">Frontend Developer</h3>
+                        <i class="fa-solid fa-angle-up" id="skillarrow1"></i>
+                    </div>
+                </div>
+                <div class="lower_block" id="showskills1">
+
+                    <!-- Progress bar  -->
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">HTML <span id="bar_Per">95%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_html"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">CSS <span id="bar_Per2">90%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_css"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">JAVASCRIPT <span id="bar_Per1">80%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_js"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">BOOTSTRAP <span id="bar_Per1">75%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_bstrp"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bar_col1" id="bar_mob2">
+                <div class="upper_block" onclick="ShowMySkills2()">
+                    <div class="up_row">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3 id="bar_up_txt">Backend Developer</h3>
+                        <i class="fa-solid fa-angle-up" id="skillarrow2"></i>
+                    </div>
+                </div>
+                <div class="lower_block" id="showskills2">
+                    <!-- Progress bar  -->
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">NODEJS <span id="bar_Per3">95%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_html"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">EXPRESSJS <span id="bar_Per4">90%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_css"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">MONGODB <span id="bar_Per4">80%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_js"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">RESTFUL API <span id="bar_Per4">75%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_bstrp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar_col1" id="bar_mob2">
+                <div class="upper_block" onclick="ShowMySkills3()">
+                    <div class="up_row">
+                        <i class="fa-solid fa-code"></i>
+                        <h3 id="bar_up_txt">Programming</h3>
+                        <i class="fa-solid fa-angle-up" id="skillarrow3"></i>
+                    </div>
+                </div>
+                <div class="lower_block" id="showskills3">
+                    <!-- Progress bar  -->
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">C++ <span id="bar_Per">85%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_html"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">PYTHON <span id="bar_Per5">80%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_css"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">C <span id="bar_Per6">70%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_js"></div>
+                        </div>
+                    </div>
+                    <div class="bar_prog">
+                        <p id="bar_col_txt">JAVA <span id="bar_Per7">45%</span></p>
+                        <div class="bar_color">
+                            <div class="bar_col_line_bstrp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+
+
+    <!-- /* ************************ qualification PAGE SECTION ******************************** */  -->
+
+
+
+
+    
+        
+        <div class="main">
+            <div class="up_head">
+                <h3 id="qual_txt">My Qualification</h3>
+                <p>My Personal Journey</p>
+            </div>
+    
+            <div class="container">
+                <ul>
+                    <li>
+                        <h3 class="title">Nirmala Memorial Foundation College </h3>
+                        <p class="title">94.33%</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                        <a href="#">Read More ></a>
+                        <span class="circle"></span>
+                        <span class="date">June 2019 - June 2021</span>
+                    </li>
+                    <li>
+                        <h3 class="title">Vidyavardhini's College Of Engineering & Technology</h3>
+                        <p class="title">CGPA - 9.17</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                        <a href="#">Read More ></a>
+                        <span class="circle"></span>
+                        <span class="date">Dec 2021 - Present</span>
+                    </li>
+                    <li>
+                        <h3 class="title">Front End Developer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                        <a href="#">Read More ></a>
+                        <span class="circle"></span>
+                        <span class="date">March 2022</span>
+                    </li>
+                    <li>
+                        <h3 class="title">Back End Developer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                        <a href="#">Read More ></a>
+                        <span class="circle"></span>
+                        <span class="date">March 2022</span>
+                    </li>
+                    <li  id="lst_qual">
+                        <h3 class="title">Full Stack Developer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                        <a href="#">Read More ></a>
+                        <span class="circle"></span>
+                        <span class="date">April 2022</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- /* ************************ DEMO PAGE SECTION ******************************** */  -->
+
+            <section class="demo_container">
+                <div class="up_head" id="dm_head">
+                    <h3>My Portfolio</h3>
+                    <p>My Recent works</p>
+                </div>
+
+                <div class="demo_box">
+                    <div class="demo_row">
+                        <div class="dm_img_box">
+                            <img src="Images/dm1.png" class="demo_img">
+                        </div>
+
+
+
+                        <div class="dm_txt">
+                            <p id="dm_t_head">YogiJi-Website-Using-MERN</p>
+                            <p id="dm_para">I have created a yoga website using MERN Stack. This website was created while learning the Basis of MERN Stack.
+                                The frontend is created using HTML, CSS, Javascript and, for backend, I have used NodeJs, ExpressJs and others, more, Dependencies and, for databases, I have used MongoDB.
+                                In this project, I have created a proper Login and Register System and also integrated cookies using a cookie-parser and authenticated users can only visit the main pages on the websites using jsonwebtoken.
+                                I have created password encryption using bcryptjs and for viewing engines I have used hbs.
+                                I have created this yoga website, so that users can practice yoga poses by looking at the videos given on the website.
+                                A yoga website combines convenience, variety, accessibility, learning resources, community, and personalization to enhance the overall yoga experience and make it more accessible to a wider audience.</p>
+
+                                <a href="https://yojijiapp.onrender.com"><button class="dm_btn">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo_box">
+                    <div class="demo_row">
+                        <div class="dm_img_box">
+                            <img src="Images/dm2.png" class="demo_img">
+                        </div>
+
+
+
+                        <div class="dm_txt">
+                            <p id="dm_t_head">YogGEEK-Virtual-Yoga-Trainer </p>
+                            <p id="dm_para">Virtual yoga trainers have gained popularity as a convenient and accessible way to practice yoga from any location at any time. This paper presents a virtual yoga trainer built with Python that uses machine learning models, computer vision techniques, and other technologies to provide yoga routines and real-time feedback to users.
+                                Additionally, the system can analyze the user's posture and movements during yoga of the system.</p>
+
+                                <a href="https://yojijiapp.onrender.com"><button class="dm_btn">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo_box">
+                    <div class="demo_row">
+                        <div class="dm_img_box">
+                            <img src="Images/dm3.png" class="demo_img">
+                        </div>
+
+
+
+                        <div class="dm_txt">
+                            <p id="dm_t_head">Myntra Clone using Js</p>
+                            <p id="dm_para">In this project we have try to Clone Myntra website. Myntra is a major Indian fashion e-commerce company. to get the idea how this big e-commerce are made , how multiple page are linke ti together & how try button is link with some functionality to make user experience more interactive.
+                                In this project we have tried to make a look alike clone of Myntra Website. we were able to clone the front end with similar looks and features.
+                                Start with HTML: Start building your clone by creating the HTML structure of your website. Begin with the basic structure of your page by adding the HTML tags and elements such as headers, paragraphs, and images.
+                                Style your clone using CSS: Once you have created the HTML structure of your clone, it is time to style it using CSS. This will involve adding colors, fonts, and other visual elements to your website to make it look like the Myntra website.
+                             </p>
+
+                                <a href="https://yojijiapp.onrender.com"><button class="dm_btn">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/in/neha-singh-69a83726a/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/devgeek2700"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="https://www.linkedin.com/in/neha-singh-69a83726a/">Neha Singh</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+<!-- </section>  -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
