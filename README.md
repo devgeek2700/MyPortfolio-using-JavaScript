@@ -33,13 +33,16 @@ This portfolio website not only highlights my technical abilities but also refle
 
 
 
+
 ## My Portfolio Website
 
-![App Screenshot](https://github.com/devgeek2700/BharatIternship-Projects/blob/master/MyPortfolio/Output/output1.png?raw=true)
+![App Screenshot](https://github.com/devgeek2700/MyPortfolio-using-JavaScript/blob/master/Output/output1.png?raw=true)
 
 ## In Dark Mode
 
-![App Screenshot](https://github.com/devgeek2700/BharatIternship-Projects/blob/master/MyPortfolio/Output/output2.png?raw=true)
+![App Screenshot](https://github.com/devgeek2700/MyPortfolio-using-JavaScript/blob/master/Output/output2.png?raw=true)
+ 
+
  
 ## 🛠 Skills
 Html, CSS, JavaScript ....
